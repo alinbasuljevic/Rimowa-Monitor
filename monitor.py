@@ -36,8 +36,10 @@ logging.basicConfig(level = logging.INFO, format = Fore.WHITE + '[%(asctime)s][%
 ###### This is where you update for your own webhook and url ######
 ###(ex. Viewer('https://www.rimowa.com/blahblahblah', 'personal webhook')##############
 
-task_1 = Viewer('https://www.rimowa.com/us/en/%22see-through%22-white/83290002.html?cgid=limited-edition#start=2','https://discordapp.com/api/webhooks/453793472915177473/_LW4d4ih57XWQPEFXsi4pq9nAeG3dv0xnTCJfOCUkKPTgxAV949G8jNhmXkyMytLHtYr')
-task_2 = Viewer('https://www.rimowa.com/us/en/%22personal-belongings%22/92590014.html?cgid=limited-edition#start=1','https://discordapp.com/api/webhooks/453793472915177473/_LW4d4ih57XWQPEFXsi4pq9nAeG3dv0xnTCJfOCUkKPTgxAV949G8jNhmXkyMytLHtYr')
+task_1 = Viewer('https://www.rimowa.com/us/en/%22see-through%22-white/83290002.html?cgid=limited-edition#start=2','')
+task_2 = Viewer('https://www.rimowa.com/us/en/%22personal-belongings%22/92590014.html?cgid=limited-edition#start=1','')
+task_3 = Viewer('https://www.rimowa.com/us/en/%22see-through%22-black/83290004.html?cgid=limited-edition#start=3', '')
 
 Thread(target = task_1.Monitor_Function).start()
 Thread(target = task_2.Monitor_Function).start()
+Thread(target = task_3.Monitor_Function).start()
